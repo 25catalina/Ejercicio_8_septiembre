@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__) 
 
-@app.route("/", methods = ["GET"]) #formulario de registro
+@app.route("/", methods = ["GET","POST"]) #formulario de registro
 def registro():
     return render_template("index.html")
 
@@ -14,7 +14,7 @@ def tabla():
 
 @app.route("/procesar_registro", methods=["POST"])
 def formulario ():
-    crear_registro = {"nombre": request.form['nombre'],
+    datos = {"nombre": request.form['nombre'],
                       "apellido": request.form['apellido'],
                       "edad": request.form['edad']}
     return redirect ("/lista")
