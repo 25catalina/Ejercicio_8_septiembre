@@ -1,5 +1,5 @@
 /* formulario de registro*/
-.bodyregistro {
+body {
   background-image: url(https://i.pinimg.com/originals/7d/2a/9f/7d2a9fca264faa93561f72b5fc885fec.gif);
   background-size: cover;
   background-position: center;
@@ -11,7 +11,9 @@
   align-items: center;
 }
 
-.h1registro {
+h1 {
+  background-color: var(--color-crimson);
+  border-radius: 5px;
   text-align: center;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
@@ -27,7 +29,7 @@ form {
 }
 
 label {
-  color: aqua;
+  color: rgb(20, 207, 207);
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -40,7 +42,19 @@ input {
     Arial, sans-serif;
 }
 
+/* lista de usuarios*/
+
+table {
+  color: white;
+  background-color: var(--color-crimson);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  border-radius: 10px;
+  border: 2px solid crimson;
+}
+
 /* paleta de colores */
 :root {
-  --color-crimson: #f10f53ab;
+  --color-crimson: #f10f5365;
 }
