@@ -10,7 +10,7 @@
 <h1>lista de registro</h1>
 
     <table>
-        
+    {% for registro in registros %}
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>
@@ -18,10 +18,10 @@
         </tr>
 
         <tr>
-            <td><h3>jose</h3></td>
-            <td><h3>perez</h3></td>
-            <td><h3>100</h3></td>
+            <td><h3>{{ registro.name }}</h3></td>
+            <td><h3>{{ registro.apellido }}</h3></td>
+            <td><h3>{{ registro.edad }}</h3></td>
         </tr>
-
+    {% endfor %}
 </body>
 </html>
