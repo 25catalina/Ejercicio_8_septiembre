@@ -5,6 +5,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1registro {
@@ -15,17 +19,25 @@
   color: crimson;
 }
 
-.contenedorform {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 form {
   width: 350px;
   padding: 30px;
   background: var(--color-crimson);
   border-radius: 8px;
+}
+
+label {
+  color: aqua;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+input {
+  color: aqua;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
 
 /* paleta de colores */
