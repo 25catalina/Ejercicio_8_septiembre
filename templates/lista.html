@@ -10,18 +10,19 @@
 <h1>lista de registro</h1>
 
     <table border="2px">
-    {% for registro in registros %}
+
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Edad</th>
         </tr>
-
+    {% for registro in registros %}
         <tr>
             <td><h3>{{ registro.name }}</h3></td>
             <td><h3>{{ registro.apellido }}</h3></td>
             <td><h3>{{ registro.edad }}</h3></td>
         </tr>
     {% endfor %}
+    </table>
 </body>
 </html>

@@ -1,8 +1,8 @@
 from mysqlconnection import connectToMySQL
-from registro import registros
+
 
 # Creamos la clase basada en la tabla
-class registros:
+class Registro:
    def __init__( self , data ):
        self.id = data['id']
        self.nombre = data['nombre']
