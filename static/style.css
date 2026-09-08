@@ -29,14 +29,14 @@ form {
 }
 
 label {
-  color: rgb(20, 207, 207);
+  color:var(--colorOrange);
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
 }
 
 input {
-  color: aqua;
+  color: var(--colorOrange);
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -57,4 +57,5 @@ table {
 /* paleta de colores */
 :root {
   --color-crimson: #f10f5365;
+  --colorOrange: #fa2f01;
 }

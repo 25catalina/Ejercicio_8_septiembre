@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__) 
 
-@app.route("/") #formulario de registro
+@app.route("/", methods = ["GET"]) #formulario de registro
 def registro():
     return render_template("index.html")
 
@@ -10,6 +10,14 @@ def registro():
 @app.route("/lista") #la tabla del diablo
 def tabla():
     return render_template("lista.html")
+
+
+@app.route("/procesar_registro", methods=["POST"])
+def formulario ():
+    crear_registro = {"nombre": request.form['nombre'],
+                      "apellido": request.form['apellido'],
+                      "edad": request.form['edad']}
+    return redirect ("/lista")
 
 if __name__ == "__main__":
 
